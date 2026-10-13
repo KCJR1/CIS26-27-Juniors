@@ -1,20 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-    body {
-        background-image: url("img/backgroundMountains.jpg");
-        background-size: cover;
-        color: #000000;
-        background-image: linear-gradient(rgba(252, 252, 252, 0.5), rgba(252, 251, 251, 0.5)), url("img/backgroundMountains.jpg");
-        min-height: 100vh;
-        }       
-    }
-</style>
+    <link rel="stylesheet" href="/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Basic HTML Elements</title>
 </head>
+
 <body>
 
 
@@ -122,7 +114,7 @@ Integer tincidunt odio id nunc porttitor mattis. Etiam vehicula metus lorem, in 
         <p><u>This Is Underlined Text</u></p>
     </section>
 
-    <section class"lists">
+    <section class="lists">
         <h2>HTML Lists</h2>
         <p>There are 3 types of lists</p>
         <h3>Unordered List are lists that have bullets points to the left of each list item. These lists are contained in an &lt;ul&gt tag. Each item in the list is contained in an &lt;li&gt; tag.</h3>
@@ -151,6 +143,29 @@ Integer tincidunt odio id nunc porttitor mattis. Etiam vehicula metus lorem, in 
 
         <h3>Description Lists</h3>
         <p>We'll go over these at a later time.</p>
+    </section>
+
+    <section class="anchor-tags">
+        <h2>Anchor Tags</h2>
+        <p><strong>Anchor</strong> element defines a hyperlink in a webpage. A hyperlink, or link, specifies where other information is located and what action the web browser should perform when a user clicks the hyperlink.</p>
+
+        <p>The &lt;a&gt; by itself is useless, without the href attribute. Href is short for hyperlink reference. If a hyperlink takes you away from your website you should allways open it in a new browser tab.</p>
+        <a href="https://www.canton.edu/cyber" target="_blank">SUNY Canton Cybersecurity Program</a> <br> <br>
+        <a href="index.html" >Home</a>
+        <h3>Absolute and Relative URLs</h3>
+        <p><strong>URL:</strong>Universal Resource Locator - otherwise known as a web address.</p>
+
+        <p><strong>Absolute URL:</strong> - This is a COMPLETE URL including the transfer protocal. Example: <br>
+       https://resources.zybooks.com/WebProgramming/mediumCatv1.jpg </p>
+
+        <p><strong>Relative URL:</strong> - This specifies a "relative" path to the web resource with no scheme or hostname (protocl or domain). They refer to resources based on the current web address you are in. Example: <br>
+        /img/cyberHero-23.webp Or index.html</p>
+        <h3>Section Links</h3>
+        <p>A URL can point to a section, or FRAGMENT, of a document by adding a hash tag (#) and a fragment identifier at the end of the URL.</p>
+        <p>EX: <br>
+        example.com#paragraphs</p>
+        <p> The section listed after the # refers to an ID attribute. EX: <br>
+        &lt;section id="paragraphs"&gt; - what the id attribute creates is called a fragment identifier.</p>
     </section>
 </body>
 </html>
