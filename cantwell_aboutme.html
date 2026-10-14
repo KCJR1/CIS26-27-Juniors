@@ -3,56 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All About Kaleb</title>
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="aboutme.css">
+    <title>All About Kaleb</title>    
+    <style>
+        body {
+            background-color: #000000;
+            color: #fcfcfc;
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            line-height: 1.5;
+        }
+        a {
+            color: #81C784;
+        }
+        
+    </style>
 </head>
 <body>
 
-    <!-- Fixed controls at the top -->
-    <div class="mode-controls">
-        <button type="button" id="lightMode">Light Mode</button>
-        <button type="button" id="darkMode">Dark Mode</button>
-        <button type="button" id="darkerMode">Darker Dark Mode</button>
-        <button type="button" id="flashlightToggle">Flashlight: Off</button>
-    </div>
-
-    <!-- Cookie Banner with Accept and Deny buttons -->
-    <div id="cookie-banner">
-        <p style="margin: 0;">We use cookies and telemetry to analyze page performance. Read our <a href="#terms" onclick="alert('Terms: By accepting, you consent to rendering system checks and mouse coordinate tracking.')">Terms & Conditions</a>.</p>
-        <div class="cookie-buttons">
-            <button type="button" id="acceptCookies">Accept</button>
-            <button type="button" id="denyCookies">Deny</button>
-        </div>
-    </div>
-
-    <!-- Side telemetry panel -->
-    <div id="side-panel">
-        <h3>Live Diagnostics</h3>
-        <p><strong>Mouse X:</strong> <span id="mouseX">0</span>px</p>
-        <p><strong>Mouse Y:</strong> <span id="mouseY">0</span>px</p>
-        <p><strong>Height:</strong> <span id="pageHeight">0</span>px</p>
-        <p><strong>Length (Width):</strong> <span id="pageWidth">0</span>px</p>
-        <p><strong>Browser:</strong> <span id="browserInfo">Detecting...</span></p>
-        <p><strong>GPU:</strong> <span id="gpuInfo">Detecting...</span></p>
-    </div>
-
     <h1>Kaleb Cantwell</h1>
     <p>Colton-Pierrepont junior who will be a <em>Computer Technician</em>!</p>
-
+    
     <h2>About Me</h2>
     <section class="paragraph1">
         <p>I grew up in <strong>Norwood-Norfolk</strong> and later moved to Pierrepont. I live with my family, which includes my <em>1 brother and 4 sisters</em>, along with our dog and cat. Moving to a new town with a big family is an early part of my life that I still think about today.</p>
     </section>
-
+    
     <section class="paragraph2">
         <p>I am currently a junior at Colton-Pierrepont, and I chose the CIS program because I believe it is a great opportunity to acquire my future <strong>Computer Technician</strong> role. Besides this class, I generally love bits of History. Outside of regular schoolwork, I professionally play <em>League of Legends, Starcraft II</em> in Esports.</p>
     </section>
-
+    
     <section class="paragraph3">
         <p>After high school, I want to immediately acquire a job as a <strong>Computer Technician</strong>. This career sounds interesting to me because I have always loved the idea of interacting with other people while also having a job where things change day to day. In 10 years, I see myself still working as a tech professional while also having <em>passive income</em>.</p>
     </section>
-
+    
     <section class="favorite_movies_shows">
         <h2>My Favorite Movies and Shows</h2>
         <ul>
@@ -63,7 +47,7 @@
             <li><em>Plankton: The Movie</em> — A view into the main villain's story.</li>
         </ul>
     </section>
-
+    
     <section class="favorite_pastimes">
         <h2>What I Do for Fun</h2>
         <ul>
@@ -74,28 +58,22 @@
             <li><strong>Exploring and learning</strong> new things in my free time.</li>
         </ul>
     </section>
-
+    
     <section class="technology_links">
         <h2>Tech Topics I Find Interesting</h2>
         <p>I am most interested in IT support, computer networking, and system troubleshooting because I enjoy solving hardware issues, helping people fix tech problems, and learning how networks operate to prepare for an IT Help Desk technician role.</p>
         <ul>
-            <li><a href="https://www.comptia.org" target="_blank" rel="noopener">CompTIA</a> — official certifications for IT technicians, including A+ and Network+</li>
-            <li><a href="https://www.coursera.org/google-certificates/it-support-certificate" target="_blank" rel="noopener">Google IT Support</a> — Designed to take people to job readiness in about three-to-six months.</li>
-            <li><a href="https://www.coursera.org/professional-certificates/microsoft-it-support-specialist" target="_blank" rel="noopener">Microsoft IT Support</a> — Designed to increase your skills in IT.</li>
-            <li><a href="https://www.netacad.com" target="_blank" rel="noopener">Cisco Networking Academy</a> — Networking courses for future IT professionals.</li>
-            <li><a href="https://www.professormesser.com" target="_blank" rel="noopener">Professor Messer</a> — Free video training courses and practice exams for CompTIA certifications.</li>
+            <li><a href="https://www.comptia.org" target="_blank">CompTIA</a> — official certifications for IT technicians, including A+ and Network+</li>
+            <li><a href="https://www.coursera.org/google-certificates/it-support-certificate" target="_blank">Google IT Support</a> — A program designed to take people to job readiness in about three-to-six months.</li>
+            <li><a href="https://www.coursera.org/professional-certificates/microsoft-it-support-specialist" target="_blank">Microsoft IT Support</a> — Designed to increase your skills in IT.</li>
+            <li><a href="https://www.netacad.com" target="_blank">Cisco Networking Academy</a> — Networking courses for future IT professionals.</li>
+            <li><a href="https://www.professormesser.com" target="_blank">Professor Messer</a> — Free video training courses and practice exams for CompTIA certifications.</li>
         </ul>
     </section>
-
+    
     <section class="wrapping_it_up">
         <p>Page created by Kaleb Cantwell — CIS, October 2026</p>
     </section>
-
-    <!-- Flashlight overlay -->
-    <div id="flashlight" class="off" aria-hidden="true"></div>
-
-    <!-- Link to external script -->
-    <script src="script.js"></script>
 
 </body>
 </html>
