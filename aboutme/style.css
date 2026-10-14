@@ -1,0 +1,195 @@
+body {
+    background-color: #000000;
+    color: #fcfcfc;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 70px 20px 40px 20px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+a {
+    color: #81C784;
+}
+
+/* Fixed mode buttons at the top */
+.mode-controls {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px;
+    background-color: #111111;
+    border-bottom: 1px solid #333333;
+    box-sizing: border-box;
+}
+
+.mode-controls button {
+    padding: 6px 10px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background: #222;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.mode-controls button:hover {
+    background: #444;
+}
+
+.mode-controls button:focus-visible {
+    outline: 2px solid #81C784;
+    outline-offset: 2px;
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+body.light-mode a {
+    color: #247a2c;
+}
+
+body.light-mode .mode-controls {
+    background-color: #eeeeee;
+    border-bottom-color: #cccccc;
+}
+
+body.light-mode .mode-controls button {
+    background: #e0e0e0;
+    color: #222222;
+    border-color: #999;
+}
+
+/* Darker dark mode */
+body.darker-mode {
+    background-color: #000000;
+    color: #000000;
+}
+
+body.darker-mode a {
+    color: #000000;
+}
+
+body.darker-mode .mode-controls {
+    background-color: #050505;
+    border-bottom-color: #222222;
+}
+
+body.darker-mode .mode-controls button {
+    background: #080808;
+    color: #999999;
+    border-color: #333333;
+}
+
+/* Cookie Banner */
+#cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20000;
+    border-top: 2px solid #81C784;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.5);
+    gap: 15px;
+}
+#cookie-banner.hidden {
+    display: none;
+}
+.cookie-buttons {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+#cookie-banner button {
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#acceptCookies {
+    background: #81C784;
+    color: #000;
+}
+#acceptCookies:hover {
+    background: #66bb6a;
+}
+#denyCookies {
+    background: #444;
+    color: #fff;
+}
+#denyCookies:hover {
+    background: #555;
+}
+
+/* Side Info Panel */
+#side-panel {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    border: 1px solid #444;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    z-index: 15000;
+    display: none;
+    width: 200px;
+    color: #fcfcfc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+#side-panel h3 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #81C784;
+    border-bottom: 1px solid #444;
+    padding-bottom: 4px;
+}
+#side-panel p {
+    margin: 4px 0;
+}
+
+/* Lightweight flashlight overlay */
+#flashlight {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    background: radial-gradient(
+        circle 100px at var(--light-x, 50%) var(--light-y, 50%),
+        transparent 0%,
+        rgba(0, 0, 0, 0.35) 60%,
+        rgba(0, 0, 0, 0.94) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+#flashlight.active {
+    opacity: 1;
+}
+
+#flashlight.off {
+    display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #flashlight {
+        transition: none;
+    }
+}
