@@ -2,7 +2,7 @@
 body {
     background-size: cover;
     min-height: auto;
-    background-image: linear-gradient(rgba(251, 251, 251, 0.5), rgba(255, 255, 255, 0.5)), url("/img/backgroundMountains.jpg");
+    background-image: linear-gradient(rgba(251, 251, 251, 0.5), rgba(255, 255, 255, 0.5)), url("img/backgroundMountains.jpg");
     background-attachment: fixed;
 }
 /* scrolling no longer shows white space*/
