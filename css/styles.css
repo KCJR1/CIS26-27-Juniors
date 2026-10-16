@@ -1,12 +1,14 @@
-/*  puts the background image on the page and makes it cover the entire page while also making it a different color so the text can be seen */
+/* Puts the background image on the page, ensures it covers the full viewport height, and adds a white tint */
 body {
     background-size: cover;
-    min-height: auto;
-    background-image: linear-gradient(rgba(251, 251, 251, 0.5), rgba(255, 255, 255, 0.5)), url("img/backgroundMountains.jpg");
+    background-position: center; /* Keeps the center of the image focused */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Forces the body to fill the entire screen height */
+    background-image: linear-gradient(rgba(251, 251, 251, 0.5), rgba(255, 255, 255, 0.5)), url("../img/backgroundMountains.jpg");
     background-attachment: fixed;
 }
-/* scrolling no longer shows white space*/
+
+/* Scrolling no longer shows white space */
 html {
     overscroll-behavior: none;
 }
-
