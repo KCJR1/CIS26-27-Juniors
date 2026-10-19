@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <h2>The Table Element</h2>
+    <p><strong>&lt;table&gt;</strong> - This is the element that creates an HTML table. <strong>NOTE:</strong> HTML tables are used to organized data into rows and columns.</p>
+
+    <h2>Cell</h2>
+    <p><strong>Cell</strong> - it is location in the table at a specific row and column. Cells are created at the intersection of a row and a column.</p>
+
+    <h2>Table Row</h2>
+    <p><strong>&lt;tr&gt;</strong> - an element that creates a row in a table. Table rows are Nested inside of Table elments.</p>
+
+    <h2>Table Header</h2>
+    <p><strong>&lt;th&gt;</strong> - the element that creates a cell containing table header information about the data contained in a specific column.</p>
+    
+    <h2>Data Cell/Table Data</h2>
+    <p><strong>&lt;table&gt;</strong> - the element that creates a table cell containing table data.</p>
+    
+    <h2>Caption</h2>
+    <p><strong>&lt;caption&gt;</strong> - this element defines a short descritive text for the table.</p>
+    
+    <table>
+
+        <caption>This is my test data table.</caption>
+        <tr>
+            <th></th>
+            <th>Column 1</th>
+            <th>Column 2</th>
+        </tr>
+        <tr>
+            <th>Row Header 1</th>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <th>Row Header 2</th>
+            <td>Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+
+
+<p><strong>More Notes on Tables:</strong> Although you could get away without useing closing in table elements, the ouput will be very unpredictable.</p>
+<h2>Accessible Tables</h2>
+<p>Accessiblity refers to the ability of your web content to be consumed by people with disabilities. Here is an example of an Accessible Table:</p>
+
+<p>In the following table we use the scope attribute to provide accessibility detail. the scope attribute is commonly assigned "col" or "row" to indicate if the table header applies to a column or row of data.</p>
+<table>
+    <caption>Accessible Table Example</caption>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Lightest</th>
+        <th scope="col">Heavest</th>
+    </tr>
+    <tr>
+        <th scope="row">Bird</th>
+        <td>Bee Hummingbird</td>
+        <td>Macaw</td>
+    </tr>
+    <tr>
+        <th scope="row">Mammal</th>
+        <td>Pygmy Shrew</td>
+        <td>Blue Whale</td>
+    </tr>
+
+<p><strong>Colspan attribute/Rowspan attribute</strong> - a single table cell occupies a single row and column by default. But a cell may span multiple columns or multiple rows useing the colspan and rowspan attributes to specify how many columns or rows to spawn.<p>
+<table>
+    <caption>Colspan and Rowspan Example</caption>
+    <tr>
+        <th></th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+    </tr>
+    <tr>
+        <th>9:00</th>
+        <td colspan="3">warmup</td>
+    </tr>
+    <tr>
+        <th>10:00</th>
+        <td>Drills</td>
+        <td>Skills Test</td>
+        <td rowspan="2">Scrimmage</td>
+    </tr>
+    <tr>
+        <th>11:00</th>
+        <td>Film</td>
+        <td>Weights</td>
+    </tr>
+</table>
+
+<p><strong>thead Element:</strong> - &lt;thead&gt; element specifies the table header.</p>
+
+<p><strong>tbody Element:</strong> - &lt;tbody&gt; element specifies the table body.</p>
+
+<p><strong>tfoot Element:</strong> - &lt;tfoot&gt; element specifies the table footer.</p>
+
+
+</body>
+</html>

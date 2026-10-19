@@ -1,5 +1,6 @@
 /* Puts the background image on the page, ensures it covers the full viewport height, and adds a white tint */
 body {
+    
     background-size: cover;
     background-position: center; /* Keeps the center of the image focused */
     background-repeat: no-repeat;
@@ -11,4 +12,9 @@ body {
 /* Scrolling no longer shows white space */
 html {
     overscroll-behavior: none;
+}
+/* Collapses the table and makes the borders black */
+table, th, td {
+    border-collapse: collapse;
+    border: 4px solid black;
 }
