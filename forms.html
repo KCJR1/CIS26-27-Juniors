@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom PC Build Request</title>
+</head>
+<body>
+  <h1>Custom PC Build Request</h1>
+  <p>Fill out this form and our build team will spec out your dream PC.</p>
+  <p><a href="index.html">Back to home</a></p>
+
+  <!-- ==========================================================
+       PART 1 (zyBooks 3.2 Forms)
+       1. Add a <form> with action="https://httpbin.org/get" and target="_blank"
+          (no method yet -- what is the default?)
+       2. Inside it: labeled text boxes for first name (name/id "first")
+          and last name (name/id "last"), each with a placeholder
+       3. A <textarea> named "notes" with 5 rows and 50 cols
+       4. An <input type="submit">
+       5. Test it, read the URL. Then change to method="POST" and
+          action="https://httpbin.org/post" and test again.
+       ========================================================== -->
+  <form action="#" method="GET">
+      <fieldset>
+         <legend>Your Info</legend>
+               <p>
+               <label for="first">First Name</label>
+               <input type="text" id="first" name="first" placeholder="Enter your first name" required>
+               <!--NOTE: Input elements are VOID elements - so they do not include a closing tag-->
+               </p>
+               <p>
+               <label for="last">Last Name</label>
+               <input type="text" id="last" name="last" placeholder="Enter your last name" required>
+               </p>
+               <p>
+                  <label for="notes">Notes</label>
+                  <textarea id="notes" name="notes" rows="5" cols="50" placeholder="more notes"></textarea>
+               </p>
+               <p>
+                  <input type="submit" value="Submit Request">
+               </p>
+      </fieldset>
+      <!--Drop-down and list box-->
+      <fieldset>
+         <legend>Software and Ports</legend>
+         <p>
+            <label for="os">Operating System</label>
+            <select id="os" name="os">
+               <option value="Win11">Windows 11</option>
+               <option value="Ubuntu">Linux (Ubuntu)</option>
+               <option value="None">No Operating system</option>
+            </select>
+         </p>
+         <p>
+            <label for="ports">Ports needed (hold Ctrl or Command to pick more than one):</label><br>
+            <select id="ports" name="ports" size="4" multiple>
+               <option value="usbc">USB-C</option>
+               <option value="hdmi">HDMI</option>
+               <option value="displayport">DisplayPort</option>
+               <option value="ethernet">Ethernet</option>
+               <option value="thunderbolt">Thunderbolt</option>
+            </select>
+         </p>
+      </fieldset>
+
+
+  <!-- ==========================================================
+       PART 2 (zyBooks 3.3 Common form widgets)  -- inside the form
+       1. Wrap first/last name in <fieldset> with <legend>Your Info</legend>
+       2. Add a password field (name/id "tracker", size 12, maxlength 12)
+       3. Processor fieldset: 4 radio buttons, name="cpu"
+          (i5, i7, ryzen5, ryzen7) -- make i5 checked
+       4. Extras fieldset: checkboxes "wifi" (checked), "rgb", "extraSsd"
+       5. A <select> drop-down "os": Windows 11, Linux (Ubuntu), No OS
+       6. A list box "ports" with size="4" and multiple
+       7. Replace the submit input with <button type="submit">
+          and add <input type="button" value="Save for Later">
+       ========================================================== -->
+
+
+
+  <!-- ==========================================================
+       PART 3 (zyBooks 3.4 Additional form widgets)  -- inside the form
+       1. Email (type="email") and phone (type="tel") in Your Info
+       2. Build Details fieldset:
+            number  "budget"   min 500, max 3000, step 50
+            range   "rgbLevel" min 0, max 100, step 10, value 50
+            color   "caseColor"
+            date    "neededBy" with a min and max date
+            combo box: <input list="games"> + <datalist id="games">
+            url     "portfolio"
+       3. Validation: add required to first, last, email, tracker;
+          minlength="8" on tracker; a pattern on phone
+       4. Try to BREAK your form -- submit it empty, type bad data
+       ========================================================== -->
+
+</body>
+</html>
