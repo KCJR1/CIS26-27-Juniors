@@ -33,13 +33,102 @@
                <input type="text" id="last" name="last" placeholder="Enter your last name" required>
                </p>
                <p>
-                  <label for="notes">Notes</label>
-                  <textarea id="notes" name="notes" rows="5" cols="50" placeholder="more notes"></textarea>
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="name@domain.com" required>
                </p>
                <p>
-                  <input type="submit" value="Submit Request">
+                  <label for="phone">Phone:</label>
+                  <input type="tel" name="phone" id="phone" placeholder="315-555-1234"
+                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Formate: 315-555-1234">
+               </p>
+               <p>
+                  <label for="tracker">Order tracking password (8-12 characters):</label>
+                  <input type="password" name="tracker" id="tracker" size="12" minlength="8" maxlength="12" required>
                </p>
       </fieldset>
+      <fieldset>
+         <legend>Processor (pick one)</legend>
+         <div>
+            <input type="radio" id="i5" name="cpu" value="i5" checked>
+            <label for="i5">i5</label>
+         </div>
+         <div>
+               <input type="radio" id="i7" name="cpu" value="i7">
+               <label for="i7">i7</label>
+         </div>
+         <div>
+               <input type="radio" id="ryzen5" name="cpu" value="ryzen5">
+               <label for="ryzen5">Ryzen 5</label>
+         </div>
+         <div>
+               <input type="radio" id="ryzen7" name="cpu" value="ryzen7">
+               <label for="ryzen7">Ryzen 7</label>
+         </div>
+         <div>
+               <input type="radio" id="atom" name="cpu" value="atom">
+               <label for="atom">Atom</label>
+         </div>
+
+      </fieldset>
+      <fieldset>
+         <legend>Extras</legend>
+         <div>
+            <input type="checkbox" id="wifi" name="extras" value="wifi" checked>
+            <label for="wifi">Wi-Fi Card</label>
+         </div>
+         <div>
+            <input type="checkbox" id="rgb" name="extras" value="rgb">
+            <label for="rgb">RGB Lighting</label>
+         </div>
+         <div>
+            <input type="checkbox" id="extraSsd" name="extras" value="extraSsd">
+            <label for="extraSsd">Second solid-state drive(SSD)</label>
+         </div>
+      </fieldset>
+      <fieldset>
+         <p>
+            <label for="buildDetails">Build Details:</label>
+            <br>
+            <textarea id="buildDetails" name="buildDetails" rows="4" cols="50"></textarea>
+         </p>
+         <legend>Build Details</legend>
+         <p>
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" min="500" max="3000" step="50" value="1000">
+         </p>
+         <p>
+            <label for="rgbLevel">(0-100) RGB Level:</label>
+            <input type="range" id="rgbLevel" name="rgbLevel" min="0" max="100" step="10" value="50">
+         </p>
+         <p>
+            <label for="caseColor">Case Color:</label>
+            <input type="color" id="caseColor" name="caseColor">
+         </p>
+         <p>
+            <label for="neededBy">Needed By:</label>
+            <input type="date" id="neededBy" name="neededBy" min="2026-01-01" max="2027-12-31">
+         </p>
+         <p>
+            <label for="game">Main game or app you'll run:</label>
+            <input list="games" id="game" name="game">
+            <datalist id="game">
+               <option value="Fortnite">
+               <option value="Minecraft">
+               <option value="Roblox">
+               <option value="League of Legends">
+               <option value="Dota 2">
+            </datalist>
+         </p>
+      </fieldset>
+      <fieldset>
+         <label for="portfolio">Your Github Pages site:</label>
+         <input type="url" id="portfolio" name="portfolio" size="50" placeholder="Https://username.github.io">
+      </fieldset>
+      <p>
+         <label for="notes">Anything else the build team should know?</label>
+         <br>
+         <textarea id="notes" name="notes" rows="5" cols="50" placeholder="Needs to be able to fit under my desk"></textarea>
+      </p>
       <!--Drop-down and list box-->
       <fieldset>
          <legend>Software and Ports</legend>
@@ -61,6 +150,8 @@
                <option value="thunderbolt">Thunderbolt</option>
             </select>
          </p>
+         <p>
+            <input type="submit" value="Submit Request"></p>
       </fieldset>
 
 
