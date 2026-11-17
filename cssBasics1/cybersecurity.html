@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cybersecurity.css">
+    <title>Cybersecurity Basics</title>
+
+    <!-- STEP 1: Link your external stylesheet (cybersecurity.css) on the line below -->
+
+</head>
+<body>
+
+    <!-- The header has an ID. IDs are unique: only ONE element per page can use id="page-header" -->
+    <header id="page-header">
+        <h1>Cybersecurity Basics</h1>
+        <p class="tagline">Protecting people, devices, and data</p>
+
+        <!-- Navigation: these links will get a hover effect in Step 9 -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#cia">CIA Triad</a>
+            <a href="#threats">Threats</a>
+            <a href="#defense">Stay Safe</a>
+            <a href="#careers">Careers</a>
+            <a href="#resources">Resources</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Each section uses the class "card". Classes CAN be reused on many elements -->
+        <section id="intro" class="card">
+            <h2>What Is Cybersecurity?</h2>
+            <p>
+                Cybersecurity is the practice of protecting computers, networks, programs, and data
+                from attacks, damage, or unauthorized access. Every time you log in to a school
+                account, buy something online, or connect to Wi-Fi, cybersecurity is working in the
+                background to keep your information safe.
+            </p>
+            <p>
+                Attacks are not just a problem for big companies. Schools, hospitals, small businesses,
+                and everyday people are targeted every day. Learning the basics helps you protect
+                yourself and opens the door to one of the fastest-growing career fields in technology.
+            </p>
+        </section>
+
+        <section id="cia" class="card">
+            <h2>The CIA Triad</h2>
+            <p>
+                Security professionals use three core goals, called the <strong>CIA Triad</strong>,
+                to decide whether information is truly protected:
+            </p>
+            <ul>
+                <li><strong>Confidentiality</strong> - Only authorized people can see the information.
+                    Example: your grades can be viewed by you and your teachers, not by other students.</li>
+                <li><strong>Integrity</strong> - Information is accurate and has not been changed by
+                    someone who should not change it. Example: no one can secretly edit your bank balance.</li>
+                <li><strong>Availability</strong> - Information and systems are there when authorized
+                    users need them. Example: the school website stays online during registration.</li>
+            </ul>
+        </section>
+
+        <section id="threats" class="card">
+            <h2>Common Threats</h2>
+            <p>Attackers use many different tools and tricks. Here are some of the most common:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Threat</th>
+                        <th>What It Is</th>
+                        <th>Warning Sign</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Phishing</td>
+                        <td>Fake emails or messages that trick you into clicking a link or sharing a password.</td>
+                        <td>Urgent language, misspellings, or a sender address that does not match the company.</td>
+                    </tr>
+                    <tr>
+                        <td>Malware</td>
+                        <td>Malicious software such as viruses, worms, and spyware.</td>
+                        <td>A slow computer, strange pop-ups, or programs you did not install.</td>
+                    </tr>
+                    <tr>
+                        <td>Ransomware</td>
+                        <td>Malware that locks your files and demands payment to unlock them.</td>
+                        <td>Files that will not open and a message demanding money.</td>
+                    </tr>
+                    <tr>
+                        <td>Social Engineering</td>
+                        <td>Manipulating people, instead of computers, into giving up information.</td>
+                        <td>A stranger who calls or messages pretending to be tech support or a teacher.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- This paragraph uses the class "warning" -->
+            <p class="warning">
+                Warning: No real company or school IT department will ever ask you for your password.
+            </p>
+        </section>
+
+        <section id="defense" class="card">
+            <h2>How to Stay Safe</h2>
+            <ol>
+                <li>Use long, unique passwords (or passphrases) for every account.</li>
+                <li>Turn on multi-factor authentication (MFA) whenever it is offered.</li>
+                <li>Keep your operating system, apps, and browser updated.</li>
+                <li>Think before you click links or open attachments.</li>
+                <li>Back up important files so ransomware cannot hold them hostage.</li>
+            </ol>
+
+            <!-- This paragraph uses the class "tip" -->
+            <p class="tip">
+                Tip: A passphrase like "Purple-Tractor-Eats-42-Pancakes" is easier to remember
+                and much harder to crack than "P@ssw0rd1".
+            </p>
+        </section>
+
+        <section id="careers" class="card">
+            <h2>Careers in Cybersecurity</h2>
+            <p>
+                There are more open cybersecurity jobs than there are trained people to fill them.
+                Here are a few career paths you could explore:
+            </p>
+            <ul>
+                <li><strong>Security Analyst</strong> - Monitors networks and investigates suspicious activity.</li>
+                <li><strong>Penetration Tester</strong> - Legally hacks into systems to find weaknesses before criminals do.</li>
+                <li><strong>Incident Responder</strong> - Leads the cleanup and recovery after an attack.</li>
+                <li><strong>Network Administrator</strong> - Builds and maintains secure networks for organizations.</li>
+            </ul>
+        </section>
+
+        <section id="resources" class="card">
+            <h2>Learn More</h2>
+            <ul>
+                <li><a href="https://www.cisa.gov/secure-our-world" target="_blank">CISA - Secure Our World</a></li>
+                <li><a href="https://cyber.org" target="_blank">CYBER.ORG</a></li>
+                <li><a href="https://niccs.cisa.gov" target="_blank">NICCS - Cybersecurity Careers and Training</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created by YOUR NAME for Computer &amp; Information Science</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* ==========================================================
+   Cybersecurity Basics - External Stylesheet
+   Student Name:Kaleb Cantwell
+   Date: 10/17/2023
+   ========================================================== */
+/* It is better to keep CSS in a external file because it gives you easyer access to the styles and makes it easy to update and maintain. */
+/* A class selector is used to select elements with a specific class attribute, while a ID selector is used to select a single element with a unique ID attribute. In this project, a example of a class selector is `.card`, which styles elements with the class "card". An example of an ID selector is `#page-header`, which styles the element with the ID "page-header". */
+/* The descendant selector `nav a` allows you to target only the anchor (`<a>`) elements that are descendants of the `<nav>` element, while the element selector `a` would target all anchor elements on the page, regardless of their parent elements. This allows for more specific styling of links within the navigation menu without affecting other links on the page. */
+tr:hover {
+  background-color: rgb(152, 39, 63);
+}
+/* Add a bottom border to card headings */
+.card h2 {
+  border-bottom: 2px solid rgb(196, 16, 49);
+  padding-bottom: 8px;
+}
+
+/* Style Learn More links */
+#resources a {
+  color: rgb(247, 0, 255);
+  text-decoration: none;
+}
+
+/* Change Learn More link color on hover */
+#resources a:hover {
+  color: rgb(0, 183, 255);
+  text-decoration: underline;
+}
+
+/* Change color of visited links */
+a:visited {
+  color: rgb(19, 235, 228);
+}
+
+/* STEP 2: Universal selector (CSS reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STEP 3: Element selector - body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #010203;
+    color: #222222;
+    line-height: 1.6;
+}
+
+/* STEP 4: Multiple selector - headings */
+h1, h2 {
+    font-family: "Courier New", Courier, monospace;
+    color: #0b3d2e;
+}
+
+/* STEP 5: ID selector - page header */
+#page-header {
+    background-color: #0b1f2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+/* STEP 6: More element selectors - paragraphs, lists, tables */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #0b3d2e;
+    color: #ffffff;
+}
+
+/* STEP 7: Class selectors - .card, .tagline, .tip, .warning */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ff0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.tagline {
+    font-style: italic;
+    color: #9fe8c7;
+    margin-bottom: 15px;
+}
+
+.tip {
+    background-color: #e3f7ec;
+    border-left: 6px solid #1e8e5a;
+    padding: 10px;
+}
+
+.warning {
+    background-color: #e20202; 
+    border-left: 6px solid #c0392b;
+    padding: 10px;
+    font-weight: bold;
+}
+/* STEP 8: Descendant selector - links inside the nav */
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+#page-header h1 {
+    color: #39ff88;
+}
+
+/* STEP 9: Pseudo-class selector - hover effect */
+nav a:hover {
+    background-color: #39ff88;
+    color: #0b1f2a;
+}
+
+/* STEP 10: Footer */
+footer {
+    background-color: #0b1f2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
