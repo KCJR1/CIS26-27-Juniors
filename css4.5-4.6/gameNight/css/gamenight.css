@@ -101,8 +101,33 @@ h2{
 footer{
    font-size:small;
 }
-/* Step 9: font-weight, font-style, font-variant */
 
+/* Step 9: font-weight, font-style, font-variant */
+.tagline{
+   font-style: italic;
+}
+.time{
+   font-weight: bold;
+}
+h2{
+   font-variant: small-caps;
+}
 
 /* Step 10: text-align, text-transform, text-decoration, text-indent */
-
+header, footer{
+   text-align: center;
+}
+nav a{
+   text-transform: uppercase;
+   text-decoration: none;
+}
+nav a:hover{
+   text-decoration: underline;
+}
+#rules p {
+   text-align: justify;
+   text-indent: 2em;
+}
+.cancelled{
+   text-decoration: line-through .2em;
+}
