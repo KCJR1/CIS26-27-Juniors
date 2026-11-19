@@ -1,0 +1,108 @@
+/* ===================================================================
+   CIS Game Night - styles
+   Name: Kaleb Cantwell
+   We will fill this in TOGETHER, one step at a time.
+   =================================================================== */
+
+/* ---------- PART 1: COMMON PROPERTIES (zyBooks 4.5) ---------- */
+
+/* Step 1: CSS variables in :root 
+night #1b1d3a;
+neon-pink #ff5c8a;
+neon-green #3ddc97;
+gold #ffd166;
+paper #f4f3fa;*/
+
+:root{ /* Global scope for varibles */
+   --night: #1b1d3a;
+   --neon-pink: #ff5c8a;
+   --neon-green: #3ddc97;
+   --gold: #ffd166;
+   --paper: #f4f3fa;
+}
+
+/* Step 2: Text and background colors (name, hex, RGB, HSL, RGBA) */
+body{
+   color: var(--neon);
+   background-color: var(--paper);
+}
+h1{
+   color: var(--gold);
+}
+.tagline {
+   color: rgb(255,255,255);
+}
+h2{
+   color:var(--neon-pink);
+}
+.game{
+   background-color: rgba(61,220,151,0.2);
+}
+/* Step 3: Background shorthand (header) and footer colors */
+header{
+   background: var(--night) url("images/dots.svg");
+}
+footer{
+   background-color: var(--night);
+   color: white;
+}
+footer a{
+   color: var(--gold);
+}
+
+/* Step 4: display: inline-block for the nav menu */
+nav li{
+   display: inline-block;
+}
+nav a{
+   color: var(--neon-green);
+}
+nav a:hover{
+   color: var(--gold);
+}
+/* Step 5: float the image, clear the footer */
+.float-right{
+   float: right;
+}
+footer{
+   clear: both;
+}
+/* Step 6: display: inline-block (.badge) and display: none (.staff-note) */
+.staff-note{
+   display:none;
+}
+.badge{
+   display: inline-block;
+   background-color: var(--neon-pink);
+   color: white;
+}
+/* ---------- PART 2: FONT AND TEXT PROPERTIES (zyBooks 4.6) ---------- */
+
+/* Step 7: font-family stacks and the font shorthand */
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h1{
+   font: bold 3rem Impact, "Arial Black", sans-serif;
+}
+.time{
+   font-family:"courier new", consolas, monospace;
+}
+/* Step 8: font-size with relative units */
+h2{
+   font-size: 1.8rem; /*  1.8 x 16px = 28.8px */
+}
+.tagline{
+   font-size: 120%;
+}
+.badge{
+   font-size: 0.7em;
+}
+footer{
+   font-size:small;
+}
+/* Step 9: font-weight, font-style, font-variant */
+
+
+/* Step 10: text-align, text-transform, text-decoration, text-indent */
+
